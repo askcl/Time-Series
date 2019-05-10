@@ -9,10 +9,10 @@ Applying machine learning methods to predict time series
 series type | lower bound | upper bound
 --- | --- | ---
 linear trend | 0 | ![](http://latex.codecogs.com/gif.latex?%5Csigma_%7Ba%7D%5E%7B2%7D)=0.25
-Brownian motion | $\sigma^2=1$ | -
-linear trend with Brownian motion | $\sigma^2=1$ | $\sigma^2+\sigma_a^2=1.25$
-difficult trend | $2\sigma_a^2/\lambda=0.0025$ | $\sigma_a^2+2\sigma_a^2/\lambda=0.2525$
-difficult trend with Brownian motion | $\sigma^2 +2\sigma_a^2/\lambda=1.0025$ |  $\sigma^2 +\sigma_a^2+ 2\sigma_a^2/\lambda=1.2525$
+Brownian motion | ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1)=1 | -
+linear trend with Brownian motion | ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1)=1 | ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1)+![](http://latex.codecogs.com/gif.latex?%5Csigma_%7Ba%7D%5E%7B2%7D)=1.25$
+difficult trend | ![](http://www.sciweavers.org/upload/Tex2Img_1557520731/render.png)=0.0025 | ![](http://latex.codecogs.com/gif.latex?%5Csigma_%7Ba%7D%5E%7B2%7D)+![](http://www.sciweavers.org/upload/Tex2Img_1557520731/render.png)=0.2525
+difficult trend with Brownian motion | \sigma^2 +![](http://www.sciweavers.org/upload/Tex2Img_1557520731/render.png)=1.0025 |  $\sigma^2 +\sigma_a^2+ 2\sigma_a^2/\lambda=1.2525$
 
 ### Salnikov Dmitry
 Есть 2 способа предсказания временных рядов по типу данных: по изначальным значениям и по их разностям $x_{i+1}-x{i}$. В случае линейных трендов предсказание по разностям будет оптимальным, им мы и будем пользоваться.

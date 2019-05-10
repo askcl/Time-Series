@@ -3,7 +3,7 @@ Applying machine learning methods to predict time series
 
 Даны 100 рядов с 1000 значениями в каждом.
 Дисперсия шума ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1), дисперсия угла наклона тренда ![](http://latex.codecogs.com/gif.latex?%5Csigma_%7Ba%7D%5E%7B2%7D), средняя частота смены тренда 1 раз за 200 точек (![](http://latex.codecogs.com/gif.latex?%5Clambda%3D200)).
-Ошибка излома оценивается как дисперсия суммы 2 нормальных с.в. (независимых углов наклона с обоих сторон от излома) с дисперсией 0.25, т.е. равна 0.5. Чтобы оценить суммарную ошибку для сложного тренда надо ошибку излома умножить на ожидание к-во изломов, т.е. ![](http://www.sciweavers.org/upload/Tex2Img_1557520421/render.png) и усреднить, т.е. разделить на n. В итоге получим формулу ![](http://www.sciweavers.org/upload/Tex2Img_1557520976/render.png).
+Ошибка излома оценивается как дисперсия суммы 2 нормальных с.в. (независимых углов наклона с обоих сторон от излома) с дисперсией 0.25, т.е. равна 0.5. Чтобы оценить суммарную ошибку для сложного тренда надо ошибку излома умножить на ожидание к-во изломов, т.е. ![](http://www.sciweavers.org/upload/Tex2Img_1557521288/render.png) и усреднить, т.е. разделить на n. В итоге получим формулу ![](http://www.sciweavers.org/upload/Tex2Img_1557520976/render.png).
 
 ### Bounds:
 series type | lower bound | upper bound
@@ -12,7 +12,7 @@ linear trend | 0 | ![](http://www.sciweavers.org/upload/Tex2Img_1557521022/rende
 Brownian motion | ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1) | -
 linear trend with Brownian motion | ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1) | ![](http://www.sciweavers.org/upload/Tex2Img_1557521074/render.png)
 difficult trend | ![](http://www.sciweavers.org/upload/Tex2Img_1557521111/render.png) | ![](http://www.sciweavers.org/upload/Tex2Img_1557521147/render.png)
-difficult trend with Brownian motion | \sigma^2 +![](http://www.sciweavers.org/upload/Tex2Img_1557521184/render.png) |  ![](http://www.sciweavers.org/upload/Tex2Img_1557521205/render.png)
+difficult trend with Brownian motion | ![](http://www.sciweavers.org/upload/Tex2Img_1557521184/render.png) |  ![](http://www.sciweavers.org/upload/Tex2Img_1557521205/render.png)
 
 ### Salnikov Dmitry
 Есть 2 способа предсказания временных рядов по типу данных: по изначальным значениям и по их разностям $x_{i+1}-x{i}$. В случае линейных трендов предсказание по разностям будет оптимальным, им мы и будем пользоваться.

@@ -2,13 +2,13 @@
 Applying machine learning methods to predict time series
 
 Даны 100 рядов с 1000 значениями в каждом.
-Дисперсия шума !(http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1), дисперсия угла наклона тренда ![a](http://latex.codecogs.com/gif.latex?%5Csigma_%7Ba%7D%5E%7B2%7D), средняя частота смены тренда 1 раз за 200 точек ($\lambda = 200$).
-Ошибка излома оценивается как дисперсия суммы 2 нормальных с.в. (независимых углов наклона с обоих сторон от излома) с дисперсией 0.25, т.е. равна 0.5. Чтобы оценить суммарную ошибку для сложного тренда надо ошибку излома умножить на ожидание к-во изломов, т.е. $n/\lambda$ и усреднить, т.е. разделить на $n$. В итоге получим формулу $2\sigma_a^2\frac{n}{\lambda}/n$.
+Дисперсия шума ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1), дисперсия угла наклона тренда ![](http://latex.codecogs.com/gif.latex?%5Csigma_%7Ba%7D%5E%7B2%7D), средняя частота смены тренда 1 раз за 200 точек (![](http://latex.codecogs.com/gif.latex?%5Clambda%3D200)).
+Ошибка излома оценивается как дисперсия суммы 2 нормальных с.в. (независимых углов наклона с обоих сторон от излома) с дисперсией 0.25, т.е. равна 0.5. Чтобы оценить суммарную ошибку для сложного тренда надо ошибку излома умножить на ожидание к-во изломов, т.е. ![](http://www.sciweavers.org/upload/Tex2Img_1557520421/render.png) и усреднить, т.е. разделить на n. В итоге получим формулу ![](http://www.sciweavers.org/upload/Tex2Img_1557520514/render.png).
 
 ### Bounds:
 series type | lower bound | upper bound
 --- | --- | ---
-linear trend | 0 | $\sigma_a^2=0.25$
+linear trend | 0 | ![](http://latex.codecogs.com/gif.latex?%5Csigma_%7Ba%7D%5E%7B2%7D)=0.25
 Brownian motion | $\sigma^2=1$ | -
 linear trend with Brownian motion | $\sigma^2=1$ | $\sigma^2+\sigma_a^2=1.25$
 difficult trend | $2\sigma_a^2/\lambda=0.0025$ | $\sigma_a^2+2\sigma_a^2/\lambda=0.2525$

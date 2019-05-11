@@ -15,7 +15,7 @@ difficult trend | ![](https://latex.codecogs.com/gif.latex?2%5Csigma_a%5E2/%5Cla
 difficult trend with Brownian motion | ![sdf](https://latex.codecogs.com/gif.latex?%5Csigma%5E2&plus;2%5Csigma_a%5E2/%5Clambda%3D1.0025) |  ![](https://latex.codecogs.com/gif.latex?%5Csigma%5E2&plus;%5Csigma_a%5E2&plus;2%5Csigma_a%5E2/%5Clambda%3D1.2525)
 
 ### Salnikov Dmitry
-Есть 2 способа предсказания временных рядов по типу данных: по изначальным значениям и по их разностям ![](http://www.sciweavers.org/upload/Tex2Img_1557521654/render.png). В случае линейных трендов предсказание по разностям будет оптимальным, им мы и будем пользоваться.
+Есть 2 способа предсказания временных рядов по типу данных: по изначальным значениям и по их разностям ![](https://latex.codecogs.com/gif.latex?x_%7Bi&plus;1%7D-x_i). В случае линейных трендов предсказание по разностям будет оптимальным, им мы и будем пользоваться.
 
 Рассмотрим простую и регуляризованную Lasso линейные регрессии, простое дерево и градиентный бустинг для предсказания последних 300 точек каждого ряда. Сравним ээфективности методов, а заодно посмотрим, как наличие интерсепта в регрессиях влияет на результат.
 
@@ -25,7 +25,7 @@ difficult trend with Brownian motion | ![sdf](https://latex.codecogs.com/gif.lat
 
 ##### Brownian motion
 Кроссвалидация по окнам 2,4,8,12,16,20.
-conf int: ![](http://www.sciweavers.org/upload/Tex2Img_1557521432/render.png), n=100 --- ширина доверительного интервала в 1 сторону.
+conf int: ![](https://latex.codecogs.com/gif.latex?2sd%28x%29/%5Csqrt%7Bn%7D), n=100 - ширина доверительного интервала в 1 сторону.
 Лучшее предсказание --- по предыдущему значению исходных данных или просто нулями для разностей;
 
 name | train | test | conf int

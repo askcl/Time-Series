@@ -12,7 +12,7 @@ linear trend | 0 | ![](http://www.sciweavers.org/upload/Tex2Img_1557521022/rende
 Brownian motion | ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1) | -
 linear trend with Brownian motion | ![](http://latex.codecogs.com/gif.latex?%5Csigma%5E2%3D1) | ![](http://www.sciweavers.org/upload/Tex2Img_1557521074/render.png)
 difficult trend | ![](http://www.sciweavers.org/upload/Tex2Img_1557521111/render.png) | ![](http://www.sciweavers.org/upload/Tex2Img_1557521147/render.png)
-difficult trend with Brownian motion | ![](http://www.sciweavers.org/upload/Tex2Img_1557521184/render.png) |  ![](http://www.sciweavers.org/upload/Tex2Img_1557521205/render.png)
+difficult trend with Brownian motion | ![sdf](http://www.sciweavers.org/upload/Tex2Img_1557521184/render.png) |  ![](http://www.sciweavers.org/upload/Tex2Img_1557521205/render.png)
 
 ### Salnikov Dmitry
 Есть 2 способа предсказания временных рядов по типу данных: по изначальным значениям и по их разностям ![](http://www.sciweavers.org/upload/Tex2Img_1557521654/render.png). В случае линейных трендов предсказание по разностям будет оптимальным, им мы и будем пользоваться.
